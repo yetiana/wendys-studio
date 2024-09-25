@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--dark-brown);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;  /* Adjust the size of the logo here */
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: var(--pink); /* Using the pinkish color */
+    font-weight: bold;
+    margin: 0;
+  }
+  
