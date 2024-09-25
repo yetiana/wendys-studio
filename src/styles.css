@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: var(--pink);
+  font-family: 'Monaco';
+  background-color: var(--light-green);
   color: var(--dark-brown);
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--light-green);
+  color: var(--dark-green);
 }
 
 button {
@@ -52,7 +52,7 @@ button {
 
 button:hover {
   background-color: var(--pink);
-  color: var(--dark-brown);
+  color: var(--dark-green);
 }
 
 ul {

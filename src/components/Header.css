@@ -1,26 +1,71 @@
 .header {
-    background-color: var(--dark-brown);
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 50px;  /* Adjust the size of the logo here */
-    height: auto;
-    margin-right: 1rem;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-    color: var(--pink); /* Using the pinkish color */
-    font-weight: bold;
-    margin: 0;
-  }
-  
+  background-color: var(--light-green);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;  /* Aligns left and right sections */
+  align-items: center;  /* Vertically centers the content */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--pink);  /* Pink color for text */
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;  /* Adds space between each nav item */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  position: relative;  /* Necessary for the underline */
+}
+
+.navbar ul li a {
+  color: var(--dark-green);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-bottom: 5px;  /* Add padding to make room for the line */
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li a:hover {
+  color: var(--dark-brown);
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--dark-brown);
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;  /* Makes the line grow from left to right */
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;  /* Full underline on hover */
+}
+
+.navbar ul li a.active::after {
+  width: 100%;  /* Full underline if active */
+}
+

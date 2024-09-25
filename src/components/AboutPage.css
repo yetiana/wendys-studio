@@ -1,0 +1,22 @@
+.about-page {
+    padding: 3rem 2rem; /* Adjusted padding: 3rem top/bottom, 2rem left/right */
+    max-width: 900px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: var(--light-green);  /* Use lighter green background */
+    color: var(--dark-brown);  /* Use dark brown text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  .about-page h2 {
+    font-size: 2rem;
+    color: var(--pink);  /* Pink color for the heading */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .about-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
