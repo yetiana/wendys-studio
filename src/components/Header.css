@@ -9,12 +9,25 @@
 .logo-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+.logo-container h1 {
+  color: var(--pink);  /* Match the color of the links */
+  text-decoration: none;  /* Ensures no underline on the logo text */
+  margin: 0;  /* Remove default margin */
+  line-height: 1.5;
+}
+
+.logo-container a {
+  text-decoration: none;  /* Ensures no underline for NavLink */
 }
 
 .logo {
-  width: 50px;
+  width: 150px;
   height: auto;
   margin-right: 1rem;
+  padding-left: 5rem;
 }
 
 h1 {
@@ -29,7 +42,7 @@ h1 {
   display: flex;
   gap: 2rem;  /* Adds space between each nav item */
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
 }
 
 .navbar ul li {
@@ -37,7 +50,7 @@ h1 {
 }
 
 .navbar ul li a {
-  color: var(--dark-green);
+  color: var(--pink);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;

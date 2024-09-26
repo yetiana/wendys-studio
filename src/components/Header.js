@@ -6,8 +6,12 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-container"> 
-        <img src="/logo.png" alt="Wendy's Studio Logo" className="logo" /> 
-        <h1>Wendy's Studio</h1>
+        <NavLink exact to="/">
+          <img src="/logo.png" alt="Wendy's Studio Logo" className="logo" />
+        </NavLink>
+        <NavLink exact to="/">
+          <h1>Wendy's Studio</h1>
+        </NavLink>
       </div>
       <nav className="navbar">
         <ul>
