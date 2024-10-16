@@ -14,8 +14,22 @@ body {
   padding: 0;
 }
 
-h1, h2 {
+h1{
   color: var(--dark-brown);
+}
+h2 {
+  color: var(--pink);
+  display: flex;
+  justify-content: center; /* Aligns horizontally */
+  align-items: center; 
+  font-size: 40px;
+}
+h3 {
+  color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
 nav {
@@ -65,6 +79,7 @@ ul li {
 }
 
 .container {
+  display: grid;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
@@ -89,3 +104,26 @@ footer {
   margin-top: 2rem;
   border-radius: 0 0 10px 10px;
 }
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: center;
+}
+
+.services-grid .logo {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.services-text {
+  display: grid;
+  grid-template-columns: repeat(3, 500fr);
+  justify-items: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 20px;
+}
+
